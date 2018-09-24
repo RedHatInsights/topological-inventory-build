@@ -13,7 +13,7 @@ node {
             sh '''
                 eval `ssh-agent`
                 ssh-add "$insightsbot"
-                rsync -arv -e "ssh -2" * sshacs@unprotected.upload.akamai.com:/114034/insightsbeta/platform/topological-inventory/
+                rsync -arv -e "ssh -2" * sshacs@unprotected.upload.akamai.com:/114034/insights/platform/topological-inventory/
             '''
         }
     }
