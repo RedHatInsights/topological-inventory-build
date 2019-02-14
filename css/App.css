@@ -18,6 +18,8 @@ button:focus {
       color: white; }
   .add-source .pf-c-modal-box__footer {
     display: none; }
+  .add-source .pf-c-modal-box__body {
+    overflow: visible; }
 
 /* styling for sources placeholder table */
 .sources-placeholder-table {

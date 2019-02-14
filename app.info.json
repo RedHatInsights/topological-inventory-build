@@ -1,6 +1,6 @@
 {
   "app_name": "topological-inventory",
-  "src_hash": "2f4fae4c2f3893d4b62cd78ff58ed6baa313e73f",
+  "src_hash": "4f9425954153c1d0764a0bd15c08f6f24a0a6aa1",
   "src_tag": "",
   "src_branch": "master",
   "npm_info": {
@@ -18,9 +18,9 @@
       "resolved": "https://registry.npmjs.org/@babel/core/-/core-7.2.2.tgz"
     },
     "@babel/plugin-proposal-class-properties": {
-      "version": "7.2.3",
-      "from": "@babel/plugin-proposal-class-properties@7.2.3",
-      "resolved": "https://registry.npmjs.org/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.2.3.tgz"
+      "version": "7.3.0",
+      "from": "@babel/plugin-proposal-class-properties@7.3.0",
+      "resolved": "https://registry.npmjs.org/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.3.0.tgz"
     },
     "@babel/plugin-syntax-dynamic-import": {
       "version": "7.2.0",
@@ -33,9 +33,9 @@
       "resolved": "https://registry.npmjs.org/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.2.0.tgz"
     },
     "@babel/preset-env": {
-      "version": "7.2.3",
-      "from": "@babel/preset-env@7.2.3",
-      "resolved": "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.2.3.tgz"
+      "version": "7.3.1",
+      "from": "@babel/preset-env@7.3.1",
+      "resolved": "https://registry.npmjs.org/@babel/preset-env/-/preset-env-7.3.1.tgz"
     },
     "@babel/preset-react": {
       "version": "7.0.0",
@@ -43,14 +43,14 @@
       "resolved": "https://registry.npmjs.org/@babel/preset-react/-/preset-react-7.0.0.tgz"
     },
     "@data-driven-forms/pf4-component-mapper": {
-      "version": "0.2.2",
-      "from": "@data-driven-forms/pf4-component-mapper@0.2.2",
-      "resolved": "https://registry.npmjs.org/@data-driven-forms/pf4-component-mapper/-/pf4-component-mapper-0.2.2.tgz"
+      "version": "0.4.0",
+      "from": "@data-driven-forms/pf4-component-mapper@0.4.0",
+      "resolved": "https://registry.npmjs.org/@data-driven-forms/pf4-component-mapper/-/pf4-component-mapper-0.4.0.tgz"
     },
     "@data-driven-forms/react-form-renderer": {
-      "version": "1.4.4",
-      "from": "@data-driven-forms/react-form-renderer@1.4.4",
-      "resolved": "https://registry.npmjs.org/@data-driven-forms/react-form-renderer/-/react-form-renderer-1.4.4.tgz"
+      "version": "1.5.5",
+      "from": "@data-driven-forms/react-form-renderer@1.5.5",
+      "resolved": "https://registry.npmjs.org/@data-driven-forms/react-form-renderer/-/react-form-renderer-1.5.5.tgz"
     },
     "@manageiq/react-ui-components": {
       "version": "0.11.7",
@@ -58,34 +58,39 @@
       "resolved": "https://registry.npmjs.org/@manageiq/react-ui-components/-/react-ui-components-0.11.7.tgz"
     },
     "@manageiq/topological_inventory": {
-      "version": "1.0.3",
-      "from": "@manageiq/topological_inventory@1.0.3",
-      "resolved": "https://registry.npmjs.org/@manageiq/topological_inventory/-/topological_inventory-1.0.3.tgz"
+      "version": "1.0.6",
+      "from": "@manageiq/topological_inventory@1.0.6",
+      "resolved": "https://registry.npmjs.org/@manageiq/topological_inventory/-/topological_inventory-1.0.6.tgz"
     },
     "@patternfly/patternfly-next": {
-      "version": "1.0.80",
-      "from": "@patternfly/patternfly-next@1.0.80",
-      "resolved": "https://registry.npmjs.org/@patternfly/patternfly-next/-/patternfly-next-1.0.80.tgz"
+      "version": "1.0.175",
+      "from": "@patternfly/patternfly-next@1.0.175",
+      "resolved": "https://registry.npmjs.org/@patternfly/patternfly-next/-/patternfly-next-1.0.175.tgz"
     },
     "@patternfly/react-core": {
-      "version": "1.44.8",
-      "from": "@patternfly/react-core@1.44.8",
-      "resolved": "https://registry.npmjs.org/@patternfly/react-core/-/react-core-1.44.8.tgz"
+      "version": "1.51.6",
+      "from": "@patternfly/react-core@1.51.6",
+      "resolved": "https://registry.npmjs.org/@patternfly/react-core/-/react-core-1.51.6.tgz"
     },
     "@patternfly/react-icons": {
-      "version": "2.9.6",
-      "from": "@patternfly/react-icons@2.9.6",
-      "resolved": "https://registry.npmjs.org/@patternfly/react-icons/-/react-icons-2.9.6.tgz"
+      "version": "2.10.5",
+      "from": "@patternfly/react-icons@2.10.5",
+      "resolved": "https://registry.npmjs.org/@patternfly/react-icons/-/react-icons-2.10.5.tgz"
+    },
+    "@patternfly/react-table": {
+      "version": "0.4.18",
+      "from": "@patternfly/react-table@0.4.18",
+      "resolved": "https://registry.npmjs.org/@patternfly/react-table/-/react-table-0.4.18.tgz"
     },
     "@patternfly/react-tokens": {
-      "version": "1.9.5",
-      "from": "@patternfly/react-tokens@1.9.5",
-      "resolved": "https://registry.npmjs.org/@patternfly/react-tokens/-/react-tokens-1.9.5.tgz"
+      "version": "1.10.2",
+      "from": "@patternfly/react-tokens@1.10.2",
+      "resolved": "https://registry.npmjs.org/@patternfly/react-tokens/-/react-tokens-1.10.2.tgz"
     },
     "@red-hat-insights/insights-frontend-components": {
-      "version": "3.29.2",
-      "from": "@red-hat-insights/insights-frontend-components@3.29.2",
-      "resolved": "https://registry.npmjs.org/@red-hat-insights/insights-frontend-components/-/insights-frontend-components-3.29.2.tgz"
+      "version": "3.33.52",
+      "from": "@red-hat-insights/insights-frontend-components@3.33.52",
+      "resolved": "https://registry.npmjs.org/@red-hat-insights/insights-frontend-components/-/insights-frontend-components-3.33.52.tgz"
     },
     "babel-core": {
       "version": "7.0.0-bridge.0",
@@ -153,9 +158,9 @@
       "resolved": "https://registry.npmjs.org/css-loader/-/css-loader-0.28.11.tgz"
     },
     "d3": {
-      "version": "5.7.0",
-      "from": "d3@5.7.0",
-      "resolved": "https://registry.npmjs.org/d3/-/d3-5.7.0.tgz"
+      "version": "5.8.2",
+      "from": "d3@5.8.2",
+      "resolved": "https://registry.npmjs.org/d3/-/d3-5.8.2.tgz"
     },
     "enzyme": {
       "version": "3.8.0",
@@ -163,9 +168,9 @@
       "resolved": "https://registry.npmjs.org/enzyme/-/enzyme-3.8.0.tgz"
     },
     "enzyme-adapter-react-16": {
-      "version": "1.7.1",
-      "from": "enzyme-adapter-react-16@1.7.1",
-      "resolved": "https://registry.npmjs.org/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.7.1.tgz"
+      "version": "1.9.1",
+      "from": "enzyme-adapter-react-16@1.9.1",
+      "resolved": "https://registry.npmjs.org/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.9.1.tgz"
     },
     "enzyme-to-json": {
       "version": "3.3.5",
@@ -183,9 +188,9 @@
       "resolved": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-2.10.0.tgz"
     },
     "eslint-plugin-react": {
-      "version": "7.12.3",
-      "from": "eslint-plugin-react@7.12.3",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.12.3.tgz"
+      "version": "7.12.4",
+      "from": "eslint-plugin-react@7.12.4",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.12.4.tgz"
     },
     "fetch-mock": {
       "version": "7.3.0",
@@ -248,9 +253,9 @@
       "resolved": "https://registry.npmjs.org/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.5.tgz"
     },
     "moment": {
-      "version": "2.23.0",
-      "from": "moment@2.23.0",
-      "resolved": "https://registry.npmjs.org/moment/-/moment-2.23.0.tgz"
+      "version": "2.24.0",
+      "from": "moment@2.24.0",
+      "resolved": "https://registry.npmjs.org/moment/-/moment-2.24.0.tgz"
     },
     "node-sass": {
       "version": "4.11.0",
@@ -263,14 +268,14 @@
       "resolved": "https://registry.npmjs.org/npm-run-all/-/npm-run-all-4.1.5.tgz"
     },
     "patternfly-react": {
-      "version": "2.29.1",
-      "from": "patternfly-react@2.29.1",
-      "resolved": "https://registry.npmjs.org/patternfly-react/-/patternfly-react-2.29.1.tgz"
+      "version": "2.29.9",
+      "from": "patternfly-react@2.29.9",
+      "resolved": "https://registry.npmjs.org/patternfly-react/-/patternfly-react-2.29.9.tgz"
     },
     "react": {
-      "version": "16.7.0",
-      "from": "react@16.7.0",
-      "resolved": "https://registry.npmjs.org/react/-/react-16.7.0.tgz"
+      "version": "16.8.0",
+      "from": "react@16.8.0",
+      "resolved": "https://registry.npmjs.org/react/-/react-16.8.0.tgz"
     },
     "react-content-loader": {
       "version": "3.4.2",
@@ -278,9 +283,9 @@
       "resolved": "https://registry.npmjs.org/react-content-loader/-/react-content-loader-3.4.2.tgz"
     },
     "react-dom": {
-      "version": "16.7.0",
-      "from": "react-dom@16.7.0",
-      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.7.0.tgz"
+      "version": "16.8.0",
+      "from": "react-dom@16.8.0",
+      "resolved": "https://registry.npmjs.org/react-dom/-/react-dom-16.8.0.tgz"
     },
     "react-redux": {
       "version": "5.1.1",
@@ -323,9 +328,9 @@
       "resolved": "https://registry.npmjs.org/style-loader/-/style-loader-0.21.0.tgz"
     },
     "stylelint": {
-      "version": "9.9.0",
-      "from": "stylelint@9.9.0",
-      "resolved": "https://registry.npmjs.org/stylelint/-/stylelint-9.9.0.tgz"
+      "version": "9.10.1",
+      "from": "stylelint@9.10.1",
+      "resolved": "https://registry.npmjs.org/stylelint/-/stylelint-9.10.1.tgz"
     },
     "stylelint-config-recommended-scss": {
       "version": "3.2.0",
@@ -333,9 +338,9 @@
       "resolved": "https://registry.npmjs.org/stylelint-config-recommended-scss/-/stylelint-config-recommended-scss-3.2.0.tgz"
     },
     "stylelint-scss": {
-      "version": "3.4.4",
-      "from": "stylelint-scss@3.4.4",
-      "resolved": "https://registry.npmjs.org/stylelint-scss/-/stylelint-scss-3.4.4.tgz"
+      "version": "3.5.2",
+      "from": "stylelint-scss@3.5.2",
+      "resolved": "https://registry.npmjs.org/stylelint-scss/-/stylelint-scss-3.5.2.tgz"
     },
     "superagent": {
       "version": "4.1.0",
@@ -386,7 +391,7 @@
 },
   "travis": {
     "event_type": "push",
-    "build_number": "45",
-    "build_web_url": "https://travis-ci.org/ManageIQ/topological_inventory-ui/builds/489948083"
+    "build_number": "49",
+    "build_web_url": "https://travis-ci.org/ManageIQ/topological_inventory-ui/builds/493170165"
   }
 }
