@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e07091ee6f67c3170d46";
+/******/ 	var hotCurrentHash = "aa8c1ec27519f9ba7f99";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -769,7 +769,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "js/" + ({"DetailPage~ProviderPage":"DetailPage~ProviderPage","DetailPage":"DetailPage","ProviderPage":"ProviderPage","ListingPage":"ListingPage","TopologyPage":"TopologyPage"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "js/" + ({"DetailPage~ProviderPage":"DetailPage~ProviderPage","DetailPage":"DetailPage","ListingPage":"ListingPage","ProviderPage~SourcesPage":"ProviderPage~SourcesPage","ProviderPage":"ProviderPage","SourcesPage":"SourcesPage","TopologyPage":"TopologyPage"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -810,7 +810,7 @@
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "css/" + ({"DetailPage~ProviderPage":"DetailPage~ProviderPage","DetailPage":"DetailPage","ProviderPage":"ProviderPage","ListingPage":"ListingPage","TopologyPage":"TopologyPage"}[chunkId]||chunkId) + ".css";
+/******/ 				var href = "css/" + ({"DetailPage~ProviderPage":"DetailPage~ProviderPage","DetailPage":"DetailPage","ListingPage":"ListingPage","ProviderPage~SourcesPage":"ProviderPage~SourcesPage","ProviderPage":"ProviderPage","SourcesPage":"SourcesPage","TopologyPage":"TopologyPage"}[chunkId]||chunkId) + ".css";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
@@ -1174,7 +1174,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 var ProviderPage = Object(_Utilities_asyncComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
-  return Promise.all(/*! import() | ProviderPage */[__webpack_require__.e("DetailPage~ProviderPage"), __webpack_require__.e("ProviderPage")]).then(__webpack_require__.bind(null, /*! ./SmartComponents/ProviderPage/ProviderPage */ "./src/SmartComponents/ProviderPage/ProviderPage.js"));
+  return Promise.all(/*! import() | ProviderPage */[__webpack_require__.e("ProviderPage~SourcesPage"), __webpack_require__.e("DetailPage~ProviderPage"), __webpack_require__.e("ProviderPage")]).then(__webpack_require__.bind(null, /*! ./SmartComponents/ProviderPage/ProviderPage */ "./src/SmartComponents/ProviderPage/ProviderPage.js"));
 });
 var ListingPage = Object(_Utilities_asyncComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
   return __webpack_require__.e(/*! import() | ListingPage */ "ListingPage").then(__webpack_require__.bind(null, /*! ./SmartComponents/ListingPage/ListingPage */ "./src/SmartComponents/ListingPage/ListingPage.js"));
@@ -1185,9 +1185,14 @@ var DetailPage = Object(_Utilities_asyncComponent__WEBPACK_IMPORTED_MODULE_4__["
 var TopologyPage = Object(_Utilities_asyncComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
   return __webpack_require__.e(/*! import() | TopologyPage */ "TopologyPage").then(__webpack_require__.bind(null, /*! ./SmartComponents/TopologyPage/TopologyPage */ "./src/SmartComponents/TopologyPage/TopologyPage.js"));
 });
+var SourcesPage = Object(_Utilities_asyncComponent__WEBPACK_IMPORTED_MODULE_4__["default"])(function () {
+  return Promise.all(/*! import() | SourcesPage */[__webpack_require__.e("ProviderPage~SourcesPage"), __webpack_require__.e("SourcesPage")]).then(__webpack_require__.bind(null, /*! ./pages/SourcesPage */ "./src/pages/SourcesPage.js"));
+});
 var paths = {
-  providers: '/',
-  provider_new: '/new',
+  sources: '/',
+  sources_new: '/new',
+  providers: '/providers',
+  provider_new: '/providers/new',
   provider_detail: '/:id',
   topology: '/:id/topology'
 };
@@ -1230,6 +1235,16 @@ var dynamicRoutes = function dynamicRoutes(viewDefinitions) {
 var Routes = function Routes(props) {
   var path = props.childProps.location.pathname;
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(InsightsRoute, {
+    exact: true,
+    path: paths.sources,
+    component: SourcesPage,
+    rootClass: "providers"
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(InsightsRoute, {
+    exact: true,
+    path: paths.sources_new,
+    component: SourcesPage,
+    rootClass: "providers"
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(InsightsRoute, {
     exact: true,
     path: paths.providers,
     component: ProviderPage,
