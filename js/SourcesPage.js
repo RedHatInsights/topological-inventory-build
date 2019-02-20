@@ -159,7 +159,9 @@ function (_React$Component) {
       return [{
         title: 'Remove Source',
         onClick: function onClick(_ev, i) {
-          return _this.props.history.push("/".concat(_this.sourceIndexToId(i)));
+          _this.props.removeSource(_this.sourceIndexToId(i)).then(function () {
+            _this.props.loadEntities();
+          });
         }
       }];
     });
@@ -220,6 +222,7 @@ SourcesSimpleView.propTypes = {
   loadEntities: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
   selectEntity: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
   expandEntity: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
+  removeSource: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
   sortEntities: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.func.isRequired,
   entities: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.any),
   numberOfEntities: prop_types__WEBPACK_IMPORTED_MODULE_8___default.a.number.isRequired,
@@ -237,7 +240,8 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     loadEntities: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["loadEntities"],
     selectEntity: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["selectEntity"],
     expandEntity: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["expandEntity"],
-    sortEntities: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["sortEntities"]
+    sortEntities: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["sortEntities"],
+    removeSource: _redux_actions_providers__WEBPACK_IMPORTED_MODULE_17__["removeSource"]
   }, dispatch);
 };
 
@@ -335,17 +339,14 @@ function (_Component) {
 
     _this = _babel_runtime_helpers_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_1___default()(this, _babel_runtime_helpers_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2___default()(SourcesPage).call(this, props));
 
-    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)), "submitProvider", function (values, formState) {
-      console.log('submitProvider', values, formState); //this.props.addProvider(values);
-
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_5___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4___default()(_this)), "submitProvider", function (values, _formState) {
       _this.props.createSource(values).then(function () {
-        //this.props.addAlert('Source added', 'success');
         _this.props.history.replace('/');
 
         _this.props.loadEntities();
       }).catch(function (error) {
-        console.debug('CATCH:');
-        console.debug(error); //this.props.addAlert('Source adding failed', 'danger');
+        console.log('CATCH:');
+        console.log(error);
 
         _this.props.history.replace('/');
       });

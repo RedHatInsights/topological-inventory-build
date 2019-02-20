@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "e89d8f165f21d13fa327";
+/******/ 	var hotCurrentHash = "ab1a79fed778785f82a0";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1647,7 +1647,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/toConsumableArray.js");
 /* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);
 
-var asyncActions = ['LOAD_ENTITIES', 'CREATE_SOURCE'].reduce(function (acc, curr) {
+var asyncActions = ['LOAD_ENTITIES', 'CREATE_SOURCE', 'REMOVE_SOURCE'].reduce(function (acc, curr) {
   return [].concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(acc), [curr, "".concat(curr, "_PENDING"), "".concat(curr, "_FULFILLED"), "".concat(curr, "_REJECTED")]);
 }, []);
 var ACTION_TYPES = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(asyncActions).reduce(function (acc, curr) {
