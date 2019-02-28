@@ -1,6 +1,6 @@
 {
   "app_name": "topological-inventory",
-  "src_hash": "80dc3cda70b153767b4bf6b75290208d82a83757",
+  "src_hash": "0c6e555fd9c8402bbc67a5aa7be3fc8cf54f3fee",
   "src_tag": "",
   "src_branch": "master",
   "npm_info": {
@@ -391,7 +391,7 @@
 },
   "travis": {
     "event_type": "push",
-    "build_number": "69",
-    "build_web_url": "https://travis-ci.org/ManageIQ/topological_inventory-ui/builds/499432484"
+    "build_number": "73",
+    "build_web_url": "https://travis-ci.org/ManageIQ/topological_inventory-ui/builds/499791292"
   }
 }
