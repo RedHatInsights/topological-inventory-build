@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "2f8eac42631d03d386a0";
+/******/ 	var hotCurrentHash = "060b62db647fd079ce6d";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1806,7 +1806,7 @@ var entitiesPending = function entitiesPending(state) {
 };
 
 var entitiesLoaded = function entitiesLoaded(state, _ref) {
-  var rows = _ref.payload;
+  var rows = _ref.payload.data;
   return processListInState(_babel_runtime_helpers_objectSpread__WEBPACK_IMPORTED_MODULE_1___default()({}, state, {
     loaded: true,
     rows: rows
