@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "f5a32d8859cf07b4dc11";
+/******/ 	var hotCurrentHash = "46d9a45115da2e462678";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -948,7 +948,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/insights/platform/topological-inventory/";
+/******/ 	__webpack_require__.p = "/apps/sources/";
 /******/
 /******/ 	// on error function for async loading
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
@@ -1579,22 +1579,18 @@ __webpack_require__.r(__webpack_exports__);
 
  //import ReducerRegistry from './Utilities/ReducerRegistry';
 
- // exposes webpack variable RELEASE
 
-/*global RELEASE:true*/
+var pathName = window.location.pathname.split('/');
+pathName.shift();
 
-/*eslint no-undef: "error"*/
+if (pathName[0] === 'beta') {
+  pathName.shift();
+}
 
-/**
- * Hooks up redux to app.
- *  https://redux.js.org/advanced/usage-with-react-router
- */
-
-console.log(_App__WEBPACK_IMPORTED_MODULE_4__["default"]);
 react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__["Provider"], {
   store: _App__WEBPACK_IMPORTED_MODULE_4__["default"].getRegistry().getStore()
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], {
-  basename: "/".concat("insights", "/platform/topological-inventory")
+  basename: "".concat(pathName[0], "/").concat(pathName[1])
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_4__["default"], null))), document.getElementById('root'));
 
 /***/ }),
