@@ -1,0 +1,33 @@
+button:focus {
+  outline: none; }
+
+.pf-l-gallery {
+  padding-bottom: 20px; }
+
+.ins-l-content {
+  background-color: var(--pf-global--BackgroundColor--300); }
+
+/* styling for "Add source" modal */
+.add-source {
+  border: none !important;
+  min-width: 500px;
+  min-height: 800px !important; }
+  .add-source .pf-c-modal-box__header {
+    background-image: url(/apps/sources/fonts/pfbg_576.jpg); }
+    .add-source .pf-c-modal-box__header .pf-c-modal-box__header-title {
+      color: white; }
+  .add-source .pf-c-modal-box__footer {
+    display: none; }
+  .add-source .pf-c-modal-box__body {
+    overflow: visible; }
+
+/* styling for sources placeholder table */
+.sources-placeholder-table {
+  background: white;
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-collapse: collapse; }
+  .sources-placeholder-table td {
+    display: block;
+    padding: 10px; }
+
