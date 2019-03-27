@@ -383,11 +383,10 @@ function (_Component) {
       // const filterColumns = filter(providerColumns, c => c.value);
       var form = Object(_SmartComponents_ProviderPage_providerForm__WEBPACK_IMPORTED_MODULE_16__["wizardForm"])(_this.props.sourceTypes || []);
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_patternfly_react_core__WEBPACK_IMPORTED_MODULE_13__["Modal"], {
-        className: "add-source",
-        isLarge: true,
         title: "Add a New Source",
         isOpen: _this.props.location.pathname === '/new',
-        onClose: _this.props.history.goBack
+        onClose: _this.props.history.goBack,
+        isLarge: true
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_Utilities_SourcesFormRenderer__WEBPACK_IMPORTED_MODULE_17__["default"], {
         initialValues: form.initialValues,
         schemaType: form.schemaType,
